@@ -1,0 +1,42 @@
+<!doctype html>
+<head>
+  <title>SurfaceTension Remote Sensor</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="style.css" type="text/css">
+  <script src="main.js"></script>
+</head>
+<body>
+  <header>
+    <h1><a href="index.html">Surface Tension Remote Sensor</a></h1>
+    <p>Record/download video and download CSV </p>
+  </header>
+  <main>
+    <p>
+      <button id="record" disabled>Record</button> 
+      <button id="stop" disabled>Stop</button>
+      <button id="pause" disabled>Pause</button>
+      <button id="resume" disabled>Resume</button>
+      <br>
+      <br/>
+      <button id="downloadvideo" disabled>Download Video</button>
+      <button id="downloadscript" disabled>Download Script</button>
+    </p>
+
+    <div class="row">
+      <figure>
+        <video id="live" width="320"></video><br />
+        <caption>live preview</caption>
+      </figure>
+      <figure>
+        <canvas id="canvas" width="320"></canvas><br />
+        <caption>final view</caption>
+      </figure>
+      <figure>
+        <video id="recording" controls width="320"></video><br />
+        <caption>recorded clip</caption>
+      </figure>
+    </div>
+  </main>
+</body>
